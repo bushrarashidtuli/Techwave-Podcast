@@ -3,18 +3,24 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
   <title>TechWave</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="tailwind.css">
 </head>
-<body>
-  <header>
-    <nav>
-      <h3>TechWave</h3>
-      <ul>
+<body class="inter-font">
+  <header class="bg-[#1A0B2E]">
+    <!-- navbar section -->
+    <nav class="flex justify-between w-3/4 mx-auto py-[30px]">
+      <h3 class="w-53 "><span class="text-white text-4xl font-extrabold">Tech</span><span class="bg-linear-to-r from-[#F7E93F] via-[#FB09B4] to-[#9100F8] bg-clip-text text-transparent text-4xl font-extrabold">Wave</span></h3>
+      <ul class="flex font-medium text-white text-[16px] gap-[30px]">
         <li><a href="">About</a></li>
         <li><a href="">Episodes</a></li>
         <li><a href="">Host</a></li>
       </ul>
-      <button>Subscribe</button>
+      <button class="w-33 text-white bg-linear-to-r from-[#F7E93F] via-[#FB09B4] to-[#9100F8] p-4 rounded-full">Subscribe</button>
     </nav>
   </header>
   <main>
