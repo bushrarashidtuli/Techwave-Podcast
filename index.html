@@ -9,19 +9,36 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="tailwind.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css" integrity="sha512-QeR2VH+lsBE5LSAe1Q5EnTBbe7XTBubt8dG93Y7gidSgdMCr8nVqKcfKAMyN96SV8KDbZVTDXChatu5G2KQGzg==" crossorigin="anonymous" referrerpolicy="no-referrer">
 </head>
 <body class="inter-font">
   <header class="bg-[#1A0B2E]">
     <!-- navbar section -->
-    <nav class="flex justify-between w-3/4 mx-auto py-[30px]">
-      <h3 class="w-53 "><span class="text-white text-4xl font-extrabold">Tech</span><span class="bg-linear-to-r from-[#F7E93F] via-[#FB09B4] to-[#9100F8] bg-clip-text text-transparent text-4xl font-extrabold">Wave</span></h3>
-      <ul class="flex font-medium text-white text-[16px] gap-[30px]">
+    <nav class="flex justify-between items-center w-3/4 mx-auto py-[30px]">
+      <h3 class="text-3xl font-extrabold"><span class="text-white">Tech</span><span class="bg-linear-to-r from-[#F7E93F] via-[#FB09B4] to-[#9100F8] bg-clip-text text-transparent">Wave</span></h3>
+      <ul class="hidden md:hidden lg:flex font-medium text-white text-[16px] gap-[30px]">
         <li><a href="">About</a></li>
         <li><a href="">Episodes</a></li>
         <li><a href="">Host</a></li>
       </ul>
-      <button class="w-33 text-white bg-linear-to-r from-[#F7E93F] via-[#FB09B4] to-[#9100F8] p-4 rounded-full">Subscribe</button>
+      <button class="hidden md:hidden lg:block text-white bg-linear-to-r from-[#F7E93F] via-[#FB09B4] to-[#9100F8] p-4 rounded-full">Subscribe  <i class="fa-solid fa-arrow-right"></i></button>
+      <img class="lg:hidden w-7" src="assets/hamburger-menu.png" alt="">
     </nav>
+    <!-- banner section -->
+    <section class="bg-[url('/assets/hero-bg.png')] bg-no-repeat lg:bg-repeat bg-contain bg-center py-25 flex flex-col items-center gap-6">
+      <div class="relative">
+        <img src="assets/hero-circle.png" alt="">
+        <img class="absolute top-1/2 left-1/2 -translate-1/2" src="assets/microphone.png" alt="">
+      </div>
+      <div class="w-3/4 md:w3/4 lg:w-full text-white text-center">
+        <h3 class="font-extrabold text-6xl">TechWave</h3>
+        <p class="pt-2 text-base">Your daily dose of tech insights, productivity hacks, and personal growth</p>
+      </div>
+      <div class="flex gap-2">
+        <button class="text-white bg-linear-to-r from-[#F7E93F] via-[#FB09B4] to-[#9100F8] p-4 rounded-full"><i class="fa-brands fa-spotify"></i>  Listen on Spotify</button>
+        <button class="border rounded-full px-4 text-[#00FF88]"><i class="fa-regular fa-envelope"></i>  Subscribe</button>
+      </div>
+    </section>
   </header>
   <main>
 
