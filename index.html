@@ -29,10 +29,10 @@
       <div class="relative">
         <img src="assets/hero-circle.png" alt="">
         <img class="absolute top-1/2 left-1/2 -translate-1/2" src="assets/microphone.png" alt="">
-        <span class="bg-[#00FF88] py-1.5 px-4 rounded-full absolute top-2 right-8 text-[18px] font-semibold shadow-[0_3px_27px_0_rgba(0,255,136,0.5)]">New</span>
+        <span class="bg-[#00FF88] py-1.5 px-4 rounded-full absolute top-2 right-8 text-[18px] font-semibold shadow-[0_3px_27px_0_rgba(0,255,136,0.5)]"> New</span>
       </div>
       <div class="w-3/4 md:w-3/4 lg:w-full text-white text-center">
-        <h3 class="font-extrabold text-6xl">TechWave</h3>
+        <h3 class="font-extrabold text-5xl lg:text-6xl">TechWave</h3>
         <p class="pt-2 text-base">Your daily dose of tech insights, productivity hacks, and personal growth</p>
       </div>
       <div class="flex gap-2">
@@ -45,7 +45,7 @@
     <!-- about section -->
     <section class="bg-[#1A0B2E] flex flex-col">
       <div class="w-3/4 mx-auto text-white text-center">
-        <h3 class="text-5xl font-bold">About the Podcast</h3>
+        <h3 class="text-3xl lg:text-5xl font-bold">About the Podcast</h3>
         <p class="text-[16px] pt-4">TechWave is your go-to podcast for staying ahead in the fast-paced world of technology.<br>
         We break down complex topics into digestible insights, explore productivity strategies that actually work,<br>
         and share stories of personal growth from industry leaders.</p>
@@ -111,7 +111,7 @@
      <section class="bg-[#1A0B2E] text-white py-32 flex flex-col">
       <h2 class="mx-auto text-3xl lg:text-5xl font-bold pb-10">Featured Episodes</h2>
       <div class="w-3/4 grid grid-cols-1 lg:grid-cols-3 mx-auto gap-8">
-        <div class="bg-[#250D44] w-full">
+        <div class="bg-[#250D44] w-full rounded-4xl">
           <iframe class="w-full aspect-video rounded-4xl" src="https://www.youtube.com/embed/QOKLW5ITEiI?si=0tvacEoOrkl_GgRR" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin"
           allowfullscreen></iframe>
           <div class="px-6 pb-6">
@@ -121,7 +121,7 @@
             <p class="text-[#00FF88]"><i class="fa-solid fa-clock"></i> 42 min</p>
           </div>
         </div>
-        <div class="bg-[#250D44] w-full">
+        <div class="bg-[#250D44] w-full rounded-4xl">
           <iframe class="w-full aspect-video rounded-4xl" src="https://www.youtube.com/embed/7OifVzc3qPE?si=om2QEItFulilA3Hk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
           <div class="px-6 pb-6">
             <h3 class="text-2xl font-bold py-6">Career Growth in Tech: A Roadmap</h3>
@@ -130,7 +130,7 @@
             <p class="text-[#00FF88]"><i class="fa-solid fa-clock"></i> 35 min</p>
           </div>
         </div>
-        <div class="bg-[#250D44] w-full">
+        <div class="bg-[#250D44] w-full rounded-4xl">
           <iframe class="w-full aspect-video rounded-4xl" src="https://www.youtube.com/embed/drfHeaPhXvc?si=UMePXgw0UiFc9Foa" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
           <div class="px-6 pb-6">
             <h3 class="text-2xl font-bold py-6">Career Growth in Tech: A Roadmap</h3>
@@ -141,9 +141,38 @@
         </div>
       </div>
      </section>
+    <!-- host section -->
+    <section class="bg-[#1A0B2E] text-white flex flex-col">
+      <div class="w-3/4 mx-auto text-center">
+        <h2 class="text-3xl lg:text-5xl font-bold">Meet the Host</h2>
+        <div class="bg-[#250D44] my-24 rounded-4xl p-10 grid grid-cols-1 lg:grid-cols-[200px_1fr] gap-6">
+          <img class="mx-auto" src="assets/host.png" alt="">
+          <div class="text-center lg:text-left">
+            <h4 class="text-3xl font-bold">Alex Kumar</h4>
+            <br>
+            <p>Tech entrepreneur, productivity expert, and lifelong learner. Alex has been in the tech industry for over 10 years, working with startups and Fortune 500 companies. Through TechWave, Alex shares insights from industry leaders and practical advice for anyone looking to grow in tech.</p>
+            <div class="flex items-center justify-center lg:justify-start gap-2 pt-4">
+              <img src="assets/linkedin.png" alt="">
+              <img src="assets/x.png" alt="">
+              <img src="assets/instagram.png" alt="">
+              <img src="assets/youtube.png" alt="">
+          </div>
+        </div>
+      </div>
+      </div>
+    </section>
   </main>
-  <footer>
-
+  <footer class="bg-[#250D44] bg-[url('./assets/footer-bg.png')] bg-no-repeat lg:bg-repeat bg-center bg-contain text-white p-32">
+    <div class=" flex flex-col gap-8 items-center">
+      <h2 class="text-7xl font-bold"><span class="">Tech</span><span class="bg-linear-to-r from-[#F7E93F] via-[#FB09B4] to-[#9100F8] bg-clip-text text-transparent">Wave</span></h2>
+      <ul class="flex flex-wrap justify-center gap-x-6 gap-y-4 lg:gap-x-10">
+        <a class="flex gap-2" href=""><img src="assets/spotify.png" alt=""> Spotify</a>
+        <a class="flex gap-2 whitespace-nowrap" href=""><img src="assets/apple-podcast.png" alt=""> Apple Podcasts</a>
+        <a class="flex gap-2" href=""><img src="assets/youtube-podcast.png" alt=""> YouTube</a>
+        <a class="flex gap-2" href=""><img src="assets/twitter.png" alt=""> Twitter</a>
+      </ul>
+      <p class="whitespace-nowrap">© 2026 TechWave Podcast. All rights reserved.</p>
+    </div>
   </footer>
 </body>
 </html>
